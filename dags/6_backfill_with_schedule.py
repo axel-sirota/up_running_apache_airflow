@@ -37,7 +37,7 @@ def schedule_dag():
 
     cleanup = BashOperator(
         task_id='cleanup',
-        bash_command='rm -r ${AIRFLOW_HOME}/downloads/processed_yelp.csv'
+        bash_command='rm -rf ${AIRFLOW_HOME}/downloads/processed_yelp.csv'
     )
 
 

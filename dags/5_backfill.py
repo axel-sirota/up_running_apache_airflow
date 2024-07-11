@@ -37,7 +37,7 @@ def backfill_dag():
 
     cleanup = BashOperator(
         task_id='cleanup',
-        bash_command='rm -r ${AIRFLOW_HOME}/downloads/processed_yelp.csv'
+        bash_command='rm -rf ${AIRFLOW_HOME}/downloads/processed_yelp.csv'
     )
 
     download_file >> process_file >> cleanup
