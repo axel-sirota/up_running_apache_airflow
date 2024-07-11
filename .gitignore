@@ -168,4 +168,8 @@ airflow.db
 standalone_admin_password.txt
 webserver_config.py
 logs
+downloads
+webserver_config.py
+standalone_admin_password.txt
+airflow-webserver.pid
 
